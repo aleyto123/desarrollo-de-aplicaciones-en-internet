@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pregunta 3  Asociación de Vinicultores</title>
+  <link rel="stylesheet" href="Bellido_pregunta3.3.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pregunta 3  Asociación de Vinicultores</h1>
+    <form action="Bellido_pregunta3.2.php" method="post">
+      <label for="cantidad">Cantidad de uva (kg):</label>
+      <input type="number" name="cantidad" id="cantidad" required min="1">
+
+      <label for="tipo">Tipo de uva:</label>
+      <select name="tipo" id="tipo" required>
+        <option value="">[ SELECCIONE ]</option>
+        <option value="A">Tipo A</option>
+        <option value="B">Tipo B</option>
+      </select>
+
+      <label for="tamano">Tamaño de uva:</label>
+      <select name="tamano" id="tamano" required>
+        <option value="">[ SELECCIONE ]</option>
+        <option value="1">Tamaño 1</option>
+        <option value="2">Tamaño 2</option>
+      </select>
+
+      <label for="precio">Precio inicial por kilo (S/):</label>
+      <input type="number" name="precio" id="precio" step="0.01" required min="0.1">
+
+      <button type="submit">Calcular</button>
+    </form>
+  </div>
+</body>
+</html>
